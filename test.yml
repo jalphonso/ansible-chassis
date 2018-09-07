@@ -7,7 +7,7 @@
   tasks:
 
   - set_fact:
-      interfaces: "{{ interfaces|default([]) + hostvars[inventory_hostname]['' + item|string].interfaces }}"
+      interfaces: "{{ interfaces|default([]) + hostvars[inventory_hostname][item|string].interfaces }}"
     with_items: "{{ switches }}"
 
   - debug:
