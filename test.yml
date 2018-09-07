@@ -1,0 +1,19 @@
+---
+
+- hosts: all
+  connection: local
+  gather_facts: no
+
+  tasks:
+
+  - set_fact:
+      interfaces: "{{ interfaces|default([]) + hostvars[inventory_hostname]['' + item|string].interfaces }}"
+    with_items: "{{ switches }}"
+
+  - debug:
+      var: interfaces
+
+  - name: render template
+    template:
+      src: interfaces.j2
+      dest: ./interfaces.txt

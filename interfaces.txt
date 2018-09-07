@@ -1,0 +1,33 @@
+interfaces {
+    interface ge-0/0/0 {
+      do something
+    }
+    interface ge-0/0/1 {
+      do something
+    }
+    interface ge-1/0/0 {
+      do something
+    }
+    interface ge-1/0/1 {
+      do something
+    }
+    interface ge-2/0/5 {
+      do something
+    }
+    interface ge-2/0/7 {
+      do something
+    }
+    interface ge-3/0/10 {
+      do something
+    }
+    interface ge-3/0/11 {
+      do something
+    }
+    interface ge-4/0/0 {
+      do something
+    }
+    interface ge-4/0/1 {
+      do something
+    }
+
+}

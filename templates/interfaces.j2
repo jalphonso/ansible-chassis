@@ -1,0 +1,9 @@
+#jinja2: lstrip_blocks: True, trim_blocks: True
+interfaces {
+{% for interface in interfaces %}
+    interface {{ interface }} {
+      do something
+    }
+{% endfor %}
+
+}

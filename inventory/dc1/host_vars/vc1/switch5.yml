@@ -1,0 +1,6 @@
+---
+
+switch5:
+  interfaces:
+    - ge-4/0/0
+    - ge-4/0/1

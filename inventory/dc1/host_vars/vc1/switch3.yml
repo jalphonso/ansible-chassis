@@ -1,0 +1,6 @@
+---
+
+switch3:
+  interfaces:
+    - ge-2/0/5
+    - ge-2/0/7

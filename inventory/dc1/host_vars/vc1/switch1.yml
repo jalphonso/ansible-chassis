@@ -1,0 +1,6 @@
+---
+
+switch1:
+  interfaces:
+    - ge-0/0/0
+    - ge-0/0/1
